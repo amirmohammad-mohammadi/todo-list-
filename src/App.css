@@ -1,0 +1,283 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.appTitle {
+  color: purple;
+  margin: 50px auto;
+  font-weight: bold;
+}
+
+.addBarButtonStyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.addToDoBar {
+  height: 35px;
+  line-height: 30px;
+  font-size: 28px;
+}
+
+.addButton {
+  height: 40px;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-left: 5px;
+  background-color: blueviolet;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.isChecked {
+  text-decoration: line-through;
+  color: gray;
+  min-width: 250px;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.notChecked {
+  color: black;
+  min-width: 250px;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.toDoOuterBlock {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.toDoBlock {
+  background-color: gold;
+  border-radius: 5px;
+  margin: 12px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 410px;
+}
+
+h3 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.toDoBlock:hover,
+.toDoBlock:focus,
+.toDoBlock:active {
+  background-color: rgba(255, 217, 0, 0.783);
+}
+
+.toDoButton {
+  height: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.checkButton {
+  background-color: green;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.deleteButton {
+  background-color: orange;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.editButton {
+  background-color: blue;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.doneButton {
+  height: 40px;
+  font-size: 16px;
+  margin: 5px;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.cancelButton {
+  height: 40px;
+  font-size: 16px;
+  margin: 5px;
+  background-color: red;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.editToDoBar {
+  height: 35px;
+  line-height: 30px;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.filterButtons {
+  margin-top: 10px;
+}
+
+.allButton,
+.activeButton,
+.completedButton {
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgb(194, 191, 191);
+}
+
+.allButton:hover, 
+.activeButton:hover,
+.completedButton:hover {
+  background-color: white;
+}
+
+.allButton {
+  border-radius: 5px 0 0 5px;
+  color: green;
+  margin-right: -1px;
+}
+
+.activeButton {
+  color: brown;
+}
+
+.completedButton {
+  margin-left: -1px;
+  border-radius: 0 5px 5px 0;
+  color: blue;
+}
+
+@media screen and (max-width: 425px) {
+  .addToDoBar {
+    height: 28px;
+    line-height: 25px;
+    font-size: 20px;
+  }
+  
+  .addButton {
+    height: 28px;
+    font-size: 20px;
+  }
+  
+  .isChecked {
+    height: 30px;
+    font-size: 20px;
+    min-width: 200px;
+  }
+  
+  .notChecked {
+    height: 30px;
+    font-size: 20px;
+    min-width: 200px;
+  }
+  
+  .toDoBlock {
+    height: 40px;
+    width: 325px;
+  }
+
+  .toDoButton {
+    height: 28px;
+    font-size: 20px;
+    margin: 2px;
+  }
+  
+  .doneButton {
+    height: 28px;
+    font-size: 16px;
+    margin: 2px;
+  }
+  
+  .cancelButton {
+    height: 28px;
+    font-size: 16px;
+    margin: 2px;
+  }
+  
+  .editToDoBar {
+    height: 28px;
+    line-height: 25px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .isChecked {
+    height: 25px;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  
+  .notChecked {
+    height: 25px;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  
+  .toDoBlock {
+    height: 30px;
+    width: 290px;
+  }
+
+  .toDoButton {
+    height: 25px;
+    font-size: 16px;
+    margin: 2px;
+  }
+  
+  .doneButton {
+    height: 25px;
+    font-size: 16px;
+    margin: 2px;
+  }
+  
+  .cancelButton {
+    height: 25px;
+    font-size: 16px;
+    margin: 2px;
+  }
+  
+  .editToDoBar {
+    height: 20px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+
+  .allButton,
+  .activeButton,
+  .completedButton {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .editToDoBar {
+    height: 20px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+
+  .toDoBlock {
+    width: 278px;
+  }
+}
